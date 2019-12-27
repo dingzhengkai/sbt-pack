@@ -23,11 +23,13 @@ pomExtra := {
 }
 
 // Add sonatype repository settings
-publishTo := Some(
-  if (isSnapshot.value)
-    Opts.resolver.sonatypeSnapshots
-  else
-    Opts.resolver.sonatypeStaging
-)
+publishTo := {
+  val nexus = "https://maven.ifeidao.com/"
+  Some {
+    if (version.value.trim.contains("-")) "snapshots" at nexus + "repository/feidao-snapshot/"
+    else "releases" at nexus + "repository/maven-releases/"
+  }
+}
 
 dynverSonatypeSnapshots in ThisBuild := true
+credentials += Credentials(Path.userHome / ".sbt" / "sonatype_credential")
