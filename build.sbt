@@ -5,7 +5,7 @@ enablePlugins(SbtPlugin)
 organization := "com.feidao.sbt"
 organizationName := "Xerial project"
 name := "sbt-pack"
-version := "0.12-SNAPSHOT"
+version := "0.12.1-SNAPSHOT"
 organizationHomepage := Some(new URL("http://xerial.org/"))
 description := "A sbt plugin for packaging distributable Scala code"
 
