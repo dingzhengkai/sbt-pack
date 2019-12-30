@@ -2,7 +2,7 @@ enablePlugins(SbtTwirl)
 enablePlugins(SbtPlugin)
 
 //organization := "org.xerial.sbt"
-organization := "com.feidao.sbt"
+organization := "com.feidao"
 organizationName := "Xerial project"
 name := "sbt-pack"
 version := "0.12.1-SNAPSHOT"
