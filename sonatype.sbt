@@ -26,7 +26,7 @@ pomExtra := {
 publishTo := {
   val nexus = "https://maven.ifeidao.com/"
   Some {
-    if (version.value.trim.contains("-")) "snapshots" at nexus + "repository/feidao-snapshot/"
+    if (version.value.trim.contains("-")) "snapshots" at nexus + "content/repositories/feidao-snapshot/"
     else "releases" at nexus + "repository/maven-releases/"
   }
 }
