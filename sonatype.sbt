@@ -24,7 +24,7 @@ pomExtra := {
 
 // Add sonatype repository settings
 publishTo := {
-  val nexus = "https://maven.ifeidao.com/"
+  val nexus = "https://maven.xstack.cc/"
   Some {
     if (version.value.trim.contains("-")) "snapshots" at nexus + "content/repositories/feidao-snapshot/"
     else "releases" at nexus + "repository/maven-releases/"

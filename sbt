@@ -18,10 +18,10 @@ declare -r latest_28="2.8.2"
 
 declare -r buildProps="project/build.properties"
 
-declare -r sbt_launch_ivy_release_repo="https://maven.ifeidao.com/repository/typesafe-ivy-releases"
-declare -r sbt_launch_ivy_snapshot_repo="https://maven.ifeidao.com/repository/typesafe-ivy-snapshots"
-declare -r sbt_launch_mvn_release_repo="https://maven.ifeidao.com/repository/sbt-maven-releases"
-declare -r sbt_launch_mvn_snapshot_repo="https://maven.ifeidao.com/repository/sbt-maven-snapshots"
+declare -r sbt_launch_ivy_release_repo="https://maven.xstack.cc/repository/typesafe-ivy-releases"
+declare -r sbt_launch_ivy_snapshot_repo="https://maven.xstack.cc/repository/typesafe-ivy-snapshots"
+declare -r sbt_launch_mvn_release_repo="https://maven.xstack.cc/repository/sbt-maven-releases"
+declare -r sbt_launch_mvn_snapshot_repo="https://maven.xstack.cc/repository/sbt-maven-snapshots"
 
 declare -r default_jvm_opts_common="-Xms512m -Xss2m -XX:MaxInlineLevel=18"
 declare -r noshare_opts="-Dsbt.global.base=project/.sbtboot -Dsbt.boot.directory=project/.boot -Dsbt.ivy.home=project/.ivy"
